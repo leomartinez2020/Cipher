@@ -1,14 +1,14 @@
 package com.example.decorators;
 
-import com.example.cipher.CipherType;
+import com.example.cipher.CipherTemplate;
 
-public abstract class CipherDecorator implements CipherType {
+public abstract class CipherDecorator extends CipherTemplate {
     // Protected variable
-    protected CipherType decoratedCipher;
+    protected CipherTemplate decoratedCipher;
 
     // Method 1
     // Abstract class method
-    public CipherDecorator(CipherType decoratedCipher) {
+    public CipherDecorator(CipherTemplate decoratedCipher) {
         // This keyword refers to current object itself
         this.decoratedCipher = decoratedCipher;
     }

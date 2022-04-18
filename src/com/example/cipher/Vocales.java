@@ -3,7 +3,7 @@ package com.example.cipher;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Vocales implements CipherType {
+public class Vocales extends CipherTemplate {
     @Override
     public String encrypt(String message) {
         Map<Character, Character> mapa = obtenerMapaVocales();

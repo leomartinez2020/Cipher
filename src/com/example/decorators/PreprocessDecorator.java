@@ -1,11 +1,11 @@
 package com.example.decorators;
 
-import com.example.cipher.CipherType;
+import com.example.cipher.CipherTemplate;
 
 // Concrete class extending the abstract class
 public class PreprocessDecorator extends CipherDecorator {
 
-    public PreprocessDecorator(CipherType decoratedCipher) {
+    public PreprocessDecorator(CipherTemplate decoratedCipher) {
         super(decoratedCipher);
     }
 

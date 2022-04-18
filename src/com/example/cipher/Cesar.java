@@ -1,6 +1,6 @@
 package com.example.cipher;
 
-public class Cesar implements CipherType {
+public class Cesar extends CipherTemplate {
     public static final String alpha = "abcdefghijklmnopqrstuvwxyz";
 
     @Override
